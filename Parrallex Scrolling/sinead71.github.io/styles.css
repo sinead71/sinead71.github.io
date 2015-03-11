@@ -1,0 +1,482 @@
+@charset "utf-8";
+
+@font-face
+{
+	font-family:SkinnyFont;
+	src:url(../SKINNYCAPSFONT.ttf);	
+}
+
+h1
+{
+	font-family:SkinnyFont;
+	position:absolute;
+	z-index:1;
+	top:10%;
+	left:27%;
+	font-size:120px;	
+}
+
+#pageValue
+{
+	position:fixed;
+	z-index:5;	
+}
+
+#mtnAndRiver
+{
+	background:url(../Web%20Art/moutain_river.png)100% 0 repeat;
+	position:relative;
+	z-index:0;
+	float:left;	
+}
+
+
+
+#sunImg
+{
+	width:50%;
+	left:73%;
+	top:63%;	
+	position:absolute;
+	z-index:1;
+}
+
+#mySun
+{
+	width:50%;
+}
+
+#infoGraphicNo1
+{
+	font-family:SkinnyFont;
+	font-size:36px;
+	left:10%;
+	top:56%;
+	position:absolute;
+	z-index:2;
+}
+
+#leftCloud
+{
+	width:100%;
+	margin-left:2%;
+	margin-top:22%;
+	position:absolute;
+	z-index:1;
+}
+
+
+#leftCloudNo1
+{
+	width:50%;
+}
+
+#leftCloudNo2
+{
+	width:50%;
+	margin-left:60%;	
+}
+
+#rightCloud
+{
+	width:100%;
+	margin-top:34%;
+	position:absolute;
+	z-index:1;
+}
+
+#rightCloudNo1
+{
+	width:50%;
+	margin-left:20%;
+}
+
+#rightCloudNo2
+{
+	width:50%;
+	margin-left:48%;
+}
+
+#middleCloud
+{
+	width:100%;
+	margin-top:38%;
+	position:absolute;
+	z-index:1;
+}
+
+#middleCloudNo1
+{
+	width:50%;
+	margin-left:35%;
+}
+
+#middleCloudNo2
+{
+	width:50%;
+	margin-left:57%;
+}
+
+
+#secondMidCloud
+{
+	width:100%;
+	margin-top:38%;
+	position:absolute;
+	z-index:1;
+}
+
+#secondMidCloudNo1
+{
+	width:50%;
+}
+
+#secondMidCloudNo2
+{
+	width:50%;
+	margin-left:13%;
+}
+
+#infoGraphicNo2
+{
+	font-family:SkinnyFont;
+	font-size:36px;
+	left:10%;
+	top:100%;
+	position:absolute;
+	z-index:2;
+}
+
+#infoGraphicNo3
+{
+	font-family:SkinnyFont;
+	font-size:36px;
+	left:45%;
+	top:106%;
+	position:absolute;
+	z-index:2;
+}
+
+#infoGraphicNo4
+{
+	font-family:SkinnyFont;
+	font-size:36px;
+	left:38%;
+	top:154%;
+	position:absolute;
+	z-index:2;
+}
+
+#rainDropNo1
+{
+	width:14%;
+	left:35%;
+	top:150%;
+	position:absolute;	
+	z-index:1;
+}
+
+#rainDropNo2
+{
+	width:6%;
+	left:12%;
+	top:148%;	
+	position:absolute;	
+	z-index:1;		
+}
+
+#rainDropNo3
+{
+	width:8%;
+	left:53%;
+	top:150%;	
+	position:absolute;	
+	z-index:1;	
+}
+
+#rainDropNo4
+{
+	width:3%;
+	left:30%;
+	top:146%;
+	position:absolute;	
+	z-index:1;	
+}
+
+#rainDropNo5
+{
+	width:7%;
+	left:85%;
+	top:137%;
+	position:absolute;	
+	z-index:1;	
+}
+
+#rainDropNo6
+{
+	width:14%;
+	left:68%;
+	top:149%;
+	position:absolute;	
+	z-index:1;	
+}
+
+#rainDropNo7
+{
+	width:12%;
+	left:7%;
+	top:144%;
+	position:absolute;	
+	z-index:1;	
+}
+
+#rainDropNo8
+{
+	width:5%;
+	left:50%;
+	top:136%;
+	position:absolute;	
+	z-index:1;	
+}
+
+#treeNo1
+{
+	width:3%;
+	left:4%;
+	top:450%;
+	position:absolute;
+	z-index:1;
+}
+
+#treeNo2
+{
+	width:3%;
+	left:8%;
+	top:455%;
+	position:absolute;
+	z-index:1;
+}
+
+#treeNo3
+{
+	width:3%;
+	left:80%;
+	top:455%;
+	position:absolute;
+	z-index:1;
+}
+
+#treeNo4
+{
+	width:3%;
+	left:88%;
+	top:460%;
+	position:absolute;
+	z-index:1;
+}
+
+#treeNo5
+{
+	width:3%;
+	left:50%;
+	top:450%;
+	position:absolute;
+	z-index:1;
+}
+
+#treeNo6
+{
+	width:3%;
+	left:18%;
+	top:467%;
+	position:absolute;
+	z-index:1;
+}
+
+#treeNo7
+{
+	width:3%;
+	left:28%;
+	top:464%;
+	position:absolute;
+	z-index:1;
+}
+
+#treeNo8
+{
+	width:3%;
+	left:6%;
+	top:462%;
+	position:absolute;
+	z-index:1;
+}
+
+#treeNo9
+{
+	width:3%;
+	left:43%;
+	top:470%;
+	position:absolute;
+	z-index:1;
+}
+
+#treeNo10
+{
+	width:3%;
+	left:70%;
+	top:475%;
+	position:absolute;
+	z-index:1;
+}
+
+#treeNo11
+{
+	width:3%;
+	left:78%;
+	top:479%;
+	position:absolute;
+	z-index:1;
+}
+
+#treeNo12
+{
+	width:3%;
+	left:16%;
+	top:484%;
+	position:absolute;
+	z-index:1;
+}
+
+#treeNo13
+{
+	width:3%;
+	left:3%;
+	top:490%;
+	position:absolute;
+	z-index:1;
+}
+
+#treeNo14
+{
+	width:3%;
+	left:28%;
+	top:497%;
+	position:absolute;
+	z-index:1;
+}
+
+#treeNo15
+{
+	width:3%;
+	left:54%;
+	top:502%;
+	position:absolute;
+	z-index:1;
+}
+
+#treeNo16
+{
+	width:3%;
+	left:10%;
+	top:508%;
+	position:absolute;
+	z-index:1;
+}
+
+#treeNo17
+{
+	width:3%;
+	left:7%;
+	top:516%;
+	position:absolute;
+	z-index:1;
+}
+
+#treeNo18
+{
+	width:3%;
+	left:57%;
+	top:538%;
+	position:absolute;
+	z-index:1;
+}
+
+#treeNo19
+{
+	width:3%;
+	left:48%;
+	top:542%;
+	position:absolute;
+	z-index:1;
+}
+
+#treeNo20
+{
+	width:3%;
+	left:44%;
+	top:550%;
+	position:absolute;
+	z-index:1;
+}
+
+#infoGraphicNo5
+{
+	font-family:SkinnyFont;
+	font-size:48px;
+	left:120%;
+	top:510%;
+	position:absolute;
+	z-index:1;
+}
+
+#infoGraphicsNo6
+{
+	font-family:SkinnyFont;
+	font-size:48px;
+	left:126%;
+	top:550%;
+	position:absolute;
+	z-index:1;
+}
+
+#infoGraphicNo7
+{
+	font-family:SkinnyFont;
+	font-size:48px;
+	left:25%;
+	top:750%;
+	position:absolute;
+	z-index:1;
+}
+
+#inforGraphicNo8
+{
+	font-family:SkinnyFont;
+	font-size:48px;
+	left:30%;
+	top:850%;
+	position:absolute;
+	z-index:1;
+}
+
+#infoGraphicNo9
+{
+	font-family:SkinnyFont;
+	font-size:48px;
+	left:5%;
+	top:950%;
+	position:absolute;
+	z-index:1;
+}
+
+#infoGraphicNo10
+{
+	font-family:SkinnyFont;
+	font-size:48px;
+	left:20%;
+	top:1030%;
+	position:absolute;
+	z-index:1;
+}
+
+
