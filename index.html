@@ -7,7 +7,10 @@
 </head>
 
 <body>
+	<a id="topOfPage"></a>
+
 	<div class="HeaderImages">
+    	<img id="portfolioLogo" src="Assets/Logo/PortfolioLogo.png" alt="Sinead Cooney logo"/>
 		<h1 id="headerName">Sinead Cooney</h1>
         <h2 id="headerTitle">Design and Web Developer</h2>
         <p id="socialIcons"><a href="https://www.facebook.com/sinead.cooney.7982" target="_blank">&#xe0aa; &nbsp;</a> 
@@ -18,16 +21,40 @@
         </p>
 	</div>
 
-	<div id="AboutMeBox">
-    	<h1 class="BoxTitle"><a href="Portfolio_AboutMe.html">About Me</a></h1>
+	<h1 id="NavHeader"><a class="navLink" href="#topOfPage">Home</a>  |  <!-- Put in a page anchor to bring you to the top of the page -->
+    				   <a class="navLink" href="Portfolio_AboutMe.html">About Me</a>  |  
+                       <a class="navLink" href="Portfolio_ContactMe.html">Contacts</a>  |  
+                       <a class="navLink" href="#allWorkCategories">Work</a> <!-- Put in a page anchor to bring you to the bottom of the page where the work boxes will always be
+                       																For example when you open the animation box all of the work will be inbewteen the header image
+                                                                                    and the work boxes. The nav bar will be always at the top of the screen so you can move around and
+                                                                                    not get lost while looking at work. See sketch book for drawings. No need for the home page then
+                                                                                    it can be deleted. -->
+    </h1>
+
+	<a id="allWorkCategories"></a>
+    
+    <div id="WebDevBox">
+    	<h1 class="BoxTitle"><a href="Portfolio_WebDev.html">Web Development</a></h1>
     </div>
     
-    <div id="ContactBox">
-    	<h1 class="BoxTitle"><a href="Portfolio_ContactMe.html">Contacts</a></h1>
+    <div id="AnimationBox">
+        <h1 class="BoxTitle"><a href="Portfolio_Animation.html">Animation</a></h1>
+    </div>
+        
+    <div id="ProgrammingBox">
+        <h1 class="BoxTitle"><a href="Portfolio_Programming.html">Programming</a></h1>
     </div>
     
-    <div id="WorkBox">
-    	<h1 class="BoxTitle"><a href="Portfolio_Work.html">Work</a></h1>
+    <div id="VisualCommunicationsBox">
+        <h1 class="BoxTitle"><a href="Portfolio_VisualCom.html">Visual Communications</a></h1>
+    </div>
+        
+    <div id="VideoBox">
+        <h1 class="BoxTitle"><a href="Portfolio_Video.html">Video</a></h1>
+    </div>
+        
+    <div id="ArtWorkBox">
+        <h1 class="BoxTitle"><a href="Portfolio_ArtWork.html">Photography</a></h1>
     </div>
 </body>
 </html>
