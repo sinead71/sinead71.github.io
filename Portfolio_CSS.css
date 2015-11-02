@@ -292,6 +292,31 @@ a{
 
 /* Animation CSS */
 
+#showReelHeading{
+	font-family: Arial;
+	padding-top:20px;
+	padding-left:3%;
+	text-decoration:underline;
+}
+
+#showReelVid{
+	width:75%;
+	height:525px;
+	padding-left:12%;
+	float:left;
+	margin-right:10%;
+}
+
+#showReelDecsription{
+	width:90%;
+	height: 200px;
+	font-family:Arial;
+	font-size:18px;
+	padding-left:4%;
+	float:left;	
+	text-align: center;
+}
+
 #Abstractnimation{
 	font-family: Arial;
 	padding-top:20px;
