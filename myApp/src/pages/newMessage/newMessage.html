@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      New Message
+      <!-- logout button -->
+      <button id="logoutBtn" (click)="Logout()">
+        <ion-icon  name="log-out"></ion-icon>
+      </button>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label floating>Header </ion-label>
+    <!-- the input field that gets the header of the new message to be created.
+      ngModel will clear the input field once new message is submitted -->
+    <ion-input type="text" id="messageHeader" #messageHeader [(ngModel)]="clearHeader"></ion-input>
+  </ion-item>
+  <ion-item>
+      <ion-label floating>Your message</ion-label>
+      <!-- the input field that gets the message content of the new message to be created.
+      ngModel will clear the input field once new message is submitted -->
+      <ion-input type="text" id="newMessage" #newMessage [(ngModel)]="clearMessage"></ion-input>  
+  </ion-item>          
+      <button id="send" ion-button block (click)="MessageSubmit(messageHeader.value, newMessage.value)">
+          Send
+      </button> 
+</ion-content>
+

@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+     Profile
+     <button id="logoutBtn" (click)="Logout()">
+        <ion-icon  name="log-out"></ion-icon>
+     </button>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div id="header">    
+   <div id="info">
+    <ion-avatar item-left>
+        <img id="profileImg" src="http://lorempixel.com/150/150">
+    </ion-avatar>
+    <h1>UserName</h1>
+   </div> 
+  </div>
+  
+  <ul>
+    <!-- afItems is the array created in the .ts file that links to the data you take from firebase -->
+    <li class="text" *ngFor="let afItem of afItems | async">
+        <ion-card>
+            <ion-item>
+                <ion-avatar item-left>
+                    <img src="http://lorempixel.com/150/150">
+                </ion-avatar>
+                <h2>{{afItem.messageHeader}}</h2>
+            </ion-item>
+            <img src="http://lorempixel.com/500/400">
+            <ion-card-content>
+                <p>{{afItem.newMessage}}</p>
+            </ion-card-content> 
+        </ion-card>
+    </li>
+  </ul>
+
+</ion-content>

@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Details
+      <!-- the log out button with ionics own symbol -->
+      <button id="logoutBtn" (click)="Logout()">
+        <ion-icon  name="log-out"></ion-icon>
+    </button>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ul>
+    <li class="text">
+        <ion-card>
+            <ion-item>
+                <ion-avatar item-left>
+                    <img src="http://lorempixel.com/150/150">
+                </ion-avatar>
+                <!-- this gets the header of the message that was clicked on from the home page -->
+                <h2>{{header}}</h2>
+            </ion-item>
+            <img src="http://lorempixel.com/500/400">
+            <ion-card-content>
+                <!-- this gets the message content of the message that was clicked on from the home page -->
+                <p>{{message}}</p>
+            </ion-card-content>  
+            <hr>
+
+            <ion-card-content id="inputContent">    
+                <div id="addCommentDiv" *ngIf='showHideInput'>
+                    <ion-card>
+                        <ion-input id="newComment" type="text" name="commentField" #newComment placeholder="Add your comment.." [(ngModel)]="clearComment"></ion-input>
+
+                        <!-- this hidden input adds the messages unique id so that it can be passed through the submit button and
+                            later sent to firebase -->
+                        <ion-input id="hiddenMessageKey" type="hidden" value="{{key}}" #messageKey></ion-input>
+
+                        <ion-buttons end id="sendBtn">
+                            <!-- the value entered into the newComment will be sent to the commentSubmit function along 
+                                with the saved messageKey -->
+                            <button ion-button icon-right color="royal" (click)="commentSubmit(newComment.value, messageKey.value)">
+                                <ion-icon name="send"></ion-icon>
+                            </button>
+                        </ion-buttons>  
+                    </ion-card>
+                </div>
+            </ion-card-content>
+        </ion-card>
+    </li>
+
+    <!-- For loop goes through all of the comments in the newComment table in firebase.
+         If statement makes usre that the key of the message selected to view matches its unique id
+         saved in each new comment. If the id doesn't match then the comment will not appear. -->
+    <li class="text" *ngFor="let afComment of afComments | async" >
+      <div *ngIf="afComment.messageKey == key">
+        <ion-card>
+            <ion-item>
+                <ion-avatar item-left>
+                    <img src="http://lorempixel.com/150/150">
+                </ion-avatar>
+                <h2>UserName</h2>
+            </ion-item>
+            <ion-card-content>
+                <!-- gets the value of the newComment that is saved in firebase -->
+                <p>{{afComment.newComment}}</p>
+            </ion-card-content>
+        </ion-card>
+      </div>
+    </li>
+  </ul>
+
+  <!-- this button opens up the comment input field -->
+  <ion-fab right bottom id="addBtn">
+    <button ion-fab color="danger" (click)="addCommentBtn()" ><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+
+
+
+</ion-content>

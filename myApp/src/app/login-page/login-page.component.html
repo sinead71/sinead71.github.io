@@ -1,0 +1,15 @@
+<br><br>
+    <!--- When the user is not logged in then the log in button will appear -->
+    <div [hidden]="!isUserLoggedIn()">
+
+        <div>
+            <h1>Log In With Your Google Account</h1>
+            <button ion-button block (click)='Login()'>Log in</button>
+        </div>
+
+    </div>
+    <!-- When the user is logged in then the log in button will hide and the app will appear -->
+    <div id="loggedIn" [hidden]="isUserLoggedIn()">
+        <button (click)="Logout()">Log out</button>
+        <tabs></tabs>
+    </div>   
